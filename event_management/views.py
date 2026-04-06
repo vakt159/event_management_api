@@ -114,7 +114,7 @@ class EventViewSet(ModelViewSet):
             400: OpenApiResponse(description="Already registered"),
         },
     )
-    @action(methods=["PATCH"], detail=True, url_path="register")
+    @action(methods=["PATCH"], detail=True, permission_classes = [IsAuthenticated,], url_path="register")
     def register(self, request, pk=None):
         event = self.get_object()
         user = request.user

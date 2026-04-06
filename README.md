@@ -26,6 +26,14 @@ application allows users to create, view, update, and delete events and register
 - `GET /api/schema/` - OpenAPI schema
 - `GET /api/schema/swagger-ui/` - Swagger UI
 
+
+## Checking Emails
+
+This project uses MailHog for local email testing.
+
+- Open the MailHog web UI at `http://localhost:8025`
+- Sent emails are captured automatically and displayed there
+
 ## Run from GitHub
 
 Clone the repository and start the app:
